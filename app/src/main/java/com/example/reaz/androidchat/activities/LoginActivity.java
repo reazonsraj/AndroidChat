@@ -372,6 +372,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                         @Override
                         public void onClick(DialogInterface dialog, int id) {
                             // sign in the user ...
+                            EditText usernameField = (EditText)((AlertDialog)dialog).findViewById(R.id.username);
+                            String username = usernameField.getText().toString();
+
                         }
                     });
 
