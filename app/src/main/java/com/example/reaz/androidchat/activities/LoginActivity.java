@@ -42,6 +42,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -372,11 +373,20 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                         @Override
                         public void onClick(DialogInterface dialog, int id) {
                             // sign in the user ...
-                            EditText usernameField = (EditText)((AlertDialog)dialog).findViewById(R.id.username);
+
+                            //date base https://android-chat-2d890.firebaseio.com/
+
+
+                            EditText usernameField = (EditText) ((AlertDialog) dialog).findViewById(R.id.username);
                             String username = usernameField.getText().toString();
+                            String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+                            User aUser = new User(username,"Enpty","Empty");
+
+                              FirebaseDatabase.getInstance().getReference("users").child(userId).child("profile").setValue(aUser);
+
 
                         }
-                    });
+                    })
 
             return builder.create();
         }
