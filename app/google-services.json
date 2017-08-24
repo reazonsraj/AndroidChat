@@ -15,6 +15,50 @@
       },
       "oauth_client": [
         {
+          "client_id": "394204235793-srg1unnsna7qnlam2pdicm0r1jh5acdj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.reaz.androidchat",
+            "certificate_hash": "4bb1d3aec37dcaa4b1b2136024662e222f6dac0e"
+          }
+        },
+        {
+          "client_id": "394204235793-cf1rbjq2t38957cr9cq7llf0dh4nebhq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ6jwPaYGdBYYu_hjh00adW9dB9sHIjrA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394204235793-cf1rbjq2t38957cr9cq7llf0dh4nebhq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394204235793:android:f9e12e16ccc05d19",
+        "android_client_info": {
+          "package_name": "com.example.reaz.fcmtestapp"
+        }
+      },
+      "oauth_client": [
+        {
           "client_id": "394204235793-cf1rbjq2t38957cr9cq7llf0dh4nebhq.apps.googleusercontent.com",
           "client_type": 3
         }
